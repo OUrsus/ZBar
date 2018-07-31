@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
     "zbar/**/*.h",
     "iphone/*.h",
     "iphone/include/**/*.h",
-    "zbar/{config,decoder,error,image,img_scanner,refcnt,scanner,symbol}.c",
+    "zbar/{config,decoder,z_error,image,img_scanner,refcnt,scanner,symbol}.c",
     "zbar/decoder/{codabar,code39,code93,code128,databar,ean,i25,qr_finder}.c",
     "zbar/qrcode/*.c",
     "iphone/*.m"
