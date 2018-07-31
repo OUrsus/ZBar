@@ -31,7 +31,7 @@
 #include <assert.h>
 
 #include <zbar.h>
-#include "error.h"
+#include "z_error.h"
 #include "symbol.h"
 #include "refcnt.h"
 

@@ -16,7 +16,7 @@
 #include "util.h"
 #include "binarize.h"
 #include "image.h"
-#include "error.h"
+#include "z_error.h"
 #include "svg.h"
 
 typedef int qr_line[3];

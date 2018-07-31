@@ -33,7 +33,7 @@
 #include <assert.h>
 
 #include <zbar.h>
-#include "error.h"
+#include "z_error.h"
 #include "image.h"
 #include "timer.h"
 #ifdef ENABLE_QRCODE

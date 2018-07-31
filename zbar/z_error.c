@@ -21,7 +21,7 @@
  *  http://sourceforge.net/projects/zbar
  *------------------------------------------------------------------------*/
 
-#include "error.h"
+#include "z_error.h"
 #include <string.h>
 
 int _zbar_verbosity = 0;

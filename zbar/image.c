@@ -21,7 +21,7 @@
  *  http://sourceforge.net/projects/zbar
  *------------------------------------------------------------------------*/
 
-#include "error.h"
+#include "z_error.h"
 #include "image.h"
 #include "refcnt.h"
 
