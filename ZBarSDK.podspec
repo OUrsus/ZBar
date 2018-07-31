@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.authors = {
     "Jeff Brown" => "spadix@users.sourceforge.net"
   }
-  s.source = "https://github.com/OUrsus/ZBar.git"
+  s.source = { :git => "https://github.com/OUrsus/ZBar.git" }
   s.description = "ZBar is an open source software suite for reading bar codes from various sources, such as video streams, image files and raw intensity sensors. It supports many popular symbologies (types of bar codes) including EAN-13/UPC-A, UPC-E, EAN-8, Code 128, Code 39, Interleaved 2 of 5 and QR Code."
   s.public_header_files = [
     "iphone/**/**/*.h",
@@ -31,11 +31,11 @@ Pod::Spec.new do |s|
     "CoreVideo",
     "QuartzCore"
   ]
-  s.libraries = "iconv"
+  s.libraries = ["iconv"]
   s.xcconfig = {
-    "EXCLUDED_SOURCE_FILE_NAMES[sdk=iphoneos*][arch=*]": "ZBarReaderViewImpl_Simulator.m",
-    "EXCLUDED_SOURCE_FILE_NAMES[sdk=iphonesimulator*][arch=*]": "ZBarReaderViewImpl_Capture.m ZBarCaptureReader.m",
-    "GCC_PREPROCESSOR_DEFINITIONS": "NDEBUG=1"
+    "EXCLUDED_SOURCE_FILE_NAMES[sdk=iphoneos*][arch=*]" => "ZBarReaderViewImpl_Simulator.m",
+    "EXCLUDED_SOURCE_FILE_NAMES[sdk=iphonesimulator*][arch=*]" => "ZBarReaderViewImpl_Capture.m ZBarCaptureReader.m",
+    "GCC_PREPROCESSOR_DEFINITIONS" => "NDEBUG=1"
   }
   s.prefix_header_file = "iphone/include/prefix.pch"
   s.compiler_flags = "-w"
